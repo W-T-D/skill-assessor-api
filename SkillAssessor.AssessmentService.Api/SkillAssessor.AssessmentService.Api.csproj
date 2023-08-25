@@ -6,4 +6,26 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.200.17" />
+      <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />
+      <PackageReference Include="HotChocolate.AspNetCore" Version="13.5.0-preview.18" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\SkillAssessor.AssessmentService.Data\SkillAssessor.AssessmentService.Data.csproj" />
+      <ProjectReference Include="..\SkillAssessor.AssessmentService.Entity\SkillAssessor.AssessmentService.Entity.csproj" />
+    </ItemGroup>
+
+
+
+
+
+
+
+
+
+
 </Project>

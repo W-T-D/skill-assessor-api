@@ -6,4 +6,16 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.200.17" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\SkillAssessor.AssessmentService.Entity\SkillAssessor.AssessmentService.Entity.csproj" />
+      <ProjectReference Include="..\SkillAssessor.Common.Exceptions\SkillAssessor.Common.Exceptions.csproj" />
+      <ProjectReference Include="..\SkillAssessor.Common.Models\SkillAssessor.Common.Models.csproj" />
+    </ItemGroup>
+
 </Project>
