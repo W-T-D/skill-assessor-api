@@ -1,13 +1,11 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
+using SkillAssessor.AssessmentService.Entity.Common;
 
-namespace SkillAssessor.AssessmentService.Entity.Skill;
+namespace SkillAssessor.AssessmentService.Entity.Skills;
 
 [DynamoDBTable("skills")]
-public sealed class Skill
+public sealed class Skill : BaseEntity
 {
-    [DynamoDBHashKey("id")]
-    public string Id { get; set; }
-
     [DynamoDBProperty("url")]
     public string ImageUrl { get; set; }
 

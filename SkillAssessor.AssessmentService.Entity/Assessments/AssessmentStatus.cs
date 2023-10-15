@@ -1,4 +1,4 @@
-﻿namespace SkillAssessor.AssessmentService.Entity.Assessment;
+﻿namespace SkillAssessor.AssessmentService.Entity.Assessments;
 
 public enum AssessmentStatus
 {

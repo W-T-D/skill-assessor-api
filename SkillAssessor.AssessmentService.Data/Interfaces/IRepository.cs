@@ -2,9 +2,9 @@
 
 public interface IRepository<T>
 {
-    Task<T> GetByIdAsync(object partitionKey, object? sortKey = null);
+    Task<T> GetByIdAsync(object partitionKey, CancellationToken cancellationToken = default, object? sortKey = default);
 
-    Task<T> SaveAsync(T item);
+    Task<T> SaveAsync(T item, CancellationToken cancellationToken = default);
 
-    Task DeleteAsync(object id);
+    Task<T> DeleteAsync(object id, CancellationToken cancellationToken = default);
 }

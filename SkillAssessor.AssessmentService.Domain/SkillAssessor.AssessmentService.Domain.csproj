@@ -7,17 +7,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="FluentValidation" Version="11.7.1" />
       <PackageReference Include="MediatR" Version="12.1.1" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\SkillAssessor.AssessmentService.Data\SkillAssessor.AssessmentService.Data.csproj" />
       <ProjectReference Include="..\SkillAssessor.AssessmentService.DomainModels\SkillAssessor.AssessmentService.DomainModels.csproj" />
+
+
+
+
+
+
+
     </ItemGroup>
+
+
+
 
 </Project>

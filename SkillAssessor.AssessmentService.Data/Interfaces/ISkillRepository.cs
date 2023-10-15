@@ -1,5 +1,4 @@
-﻿using SkillAssessor.AssessmentService.Entity.Skill;
-using SkillAssessor.Common.Models.Pagination;
+﻿using SkillAssessor.AssessmentService.Entity.Skills;
 
 namespace SkillAssessor.AssessmentService.Data.Interfaces;
 

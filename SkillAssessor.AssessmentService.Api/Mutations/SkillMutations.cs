@@ -1,14 +1,24 @@
-﻿using SkillAssessor.AssessmentService.Data.Interfaces;
-using SkillAssessor.AssessmentService.Entity.Skill;
+﻿using MediatR;
+using SkillAssessor.AssessmentService.Domain.Commands.Skills.AddOrEdit;
+using SkillAssessor.AssessmentService.Domain.Commands.Skills.Delete;
+using SkillAssessor.AssessmentService.DomainModels.Skills;
 
 namespace SkillAssessor.AssessmentService.Api.Mutations;
 
+[ExtendObjectType(Name = "Mutation")]
 public sealed class SkillMutations
 {
-    public async Task<Skill> AddSkill([Service] IRepository<Skill> repository, Skill skill)
+    public async Task<SkillDto> AddOrEditSkill([Service] IMediator mediator, AddOrEditSkillCommand command)
     {
-        var savedSkill = await repository.SaveAsync(skill);
+        var skill = await mediator.Send(command);
 
-        return savedSkill;
+        return skill;
+    }
+
+    public async Task<SkillDto> DeleteSkill([Service] IMediator mediator, DeleteSkillCommand command)
+    {
+        var skill = await mediator.Send(command);
+
+        return skill;
     }
 }

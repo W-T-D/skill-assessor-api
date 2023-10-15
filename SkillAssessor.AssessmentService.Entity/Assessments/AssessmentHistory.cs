@@ -1,6 +1,6 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 
-namespace SkillAssessor.AssessmentService.Entity.Assessment;
+namespace SkillAssessor.AssessmentService.Entity.Assessments;
 
 public sealed class AssessmentHistory
 {

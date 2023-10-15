@@ -1,13 +1,11 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
+using SkillAssessor.AssessmentService.Entity.Common;
 
-namespace SkillAssessor.AssessmentService.Entity.Skill;
+namespace SkillAssessor.AssessmentService.Entity.SkillLevels;
 
 [DynamoDBTable("skillLevels")]
-public sealed class SkillLevel
+public sealed class SkillLevel : BaseEntity
 {
-    [DynamoDBHashKey("id")]
-    public string Id { get; set; }
-
     [DynamoDBProperty("name")]
     public string Name { get; set; }
 
@@ -18,5 +16,6 @@ public sealed class SkillLevel
     public int LevelNumber { get; set; }
 
     [DynamoDBRangeKey("skillId")]
+    [DynamoDBProperty("skillId")]
     public string SkillId { get; set; }
 }

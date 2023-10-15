@@ -1,6 +1,6 @@
-﻿namespace SkillAssessor.AssessmentService.DomainModels.Skill;
+﻿namespace SkillAssessor.AssessmentService.DomainModels.SkillLevels;
 
-public sealed class SkillLevelModel
+public sealed class SkillLevelDto
 {
     public string Id { get; set; }
 

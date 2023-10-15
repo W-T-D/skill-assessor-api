@@ -8,7 +8,11 @@ public static class GraphQlExtension
     public static void AddGraphQl(this IServiceCollection services)
     {
         services.AddGraphQLServer()
-            .AddQueryType<SkillQueries>()
-            .AddMutationType<SkillMutations>();
+            .AddQueryType(d => d.Name("Query"))
+            .AddTypeExtension<SkillQueries>()
+            .AddTypeExtension<SkillLevelQueries>()
+            .AddMutationType(d => d.Name("Mutation"))
+            .AddTypeExtension<SkillMutations>()
+            .AddTypeExtension<SkillLevelMutations>();
     }
 }

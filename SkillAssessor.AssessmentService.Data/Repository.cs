@@ -15,9 +15,9 @@ public class Repository<T> : IRepository<T>
     }
 
 
-    public async Task<T> GetByIdAsync(object partitionKey, object? sortKey = null)
+    public async Task<T> GetByIdAsync(object partitionKey, CancellationToken cancellationToken, object? sortKey = null)
     {
-        var item = await DynamoDbContext.LoadAsync<T>(partitionKey, sortKey);
+        var item = await DynamoDbContext.LoadAsync<T>(partitionKey, sortKey, cancellationToken);
         
         if (item is null)
         {
@@ -27,15 +27,24 @@ public class Repository<T> : IRepository<T>
         return item;
     }
 
-    public async Task<T> SaveAsync(T item)
+    public virtual async Task<T> SaveAsync(T item, CancellationToken cancellationToken)
     {
-        await DynamoDbContext.SaveAsync(item);
+        await DynamoDbContext.SaveAsync(item, cancellationToken);
 
         return item;
     }
 
-    public virtual async Task DeleteAsync(object id)
+    public virtual async Task<T> DeleteAsync(object id, CancellationToken cancellationToken)
     {
-        await DynamoDbContext.DeleteAsync(id);
+        var item = await DynamoDbContext.LoadAsync<T>(id, cancellationToken);
+        
+        if (item is null)
+        {
+            throw new ItemDoNotFoundException();
+        }
+        
+        await DynamoDbContext.DeleteAsync(id, cancellationToken);
+
+        return item;
     }
 }
