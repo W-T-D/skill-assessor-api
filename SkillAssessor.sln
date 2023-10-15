@@ -1,8 +1,72 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.Data", "SkillAssessor.AssessmentService.Data\SkillAssessor.AssessmentService.Data.csproj", "{A3948176-7868-47BA-9C3D-67AD682D895C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.Domain", "SkillAssessor.AssessmentService.Domain\SkillAssessor.AssessmentService.Domain.csproj", "{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.Api", "SkillAssessor.AssessmentService.Api\SkillAssessor.AssessmentService.Api.csproj", "{B414D16C-A41A-40E6-8716-825C9DAD2FD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.Entity", "SkillAssessor.AssessmentService.Entity\SkillAssessor.AssessmentService.Entity.csproj", "{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.DomainModels", "SkillAssessor.AssessmentService.DomainModels\SkillAssessor.AssessmentService.DomainModels.csproj", "{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.AssessmentService.Tests", "SkillAssessor.AssessmentService.Tests\SkillAssessor.AssessmentService.Tests.csproj", "{148DD712-3B14-48B1-A7BF-81E8A056F8D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkillAssessor.AssessmentService", "SkillAssessor.AssessmentService", "{00C4839D-AB0A-4234-ACCD-720AE33699BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkillAssessor.Common", "SkillAssessor.Common", "{53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.Common.Exceptions", "SkillAssessor.Common.Exceptions\SkillAssessor.Common.Exceptions.csproj", "{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.Common.Models", "SkillAssessor.Common.Models\SkillAssessor.Common.Models.csproj", "{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3948176-7868-47BA-9C3D-67AD682D895C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3948176-7868-47BA-9C3D-67AD682D895C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3948176-7868-47BA-9C3D-67AD682D895C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3948176-7868-47BA-9C3D-67AD682D895C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B414D16C-A41A-40E6-8716-825C9DAD2FD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B414D16C-A41A-40E6-8716-825C9DAD2FD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B414D16C-A41A-40E6-8716-825C9DAD2FD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B414D16C-A41A-40E6-8716-825C9DAD2FD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148DD712-3B14-48B1-A7BF-81E8A056F8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148DD712-3B14-48B1-A7BF-81E8A056F8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148DD712-3B14-48B1-A7BF-81E8A056F8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148DD712-3B14-48B1-A7BF-81E8A056F8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B414D16C-A41A-40E6-8716-825C9DAD2FD0} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{A3948176-7868-47BA-9C3D-67AD682D895C} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{9A203D2A-FF90-4AB0-9F8F-6BDE3CE63057} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{57CC0A25-C83A-47F7-8117-A4CD21B5DBE6} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{8C22F2DE-242D-4F0E-B6BE-DDE5811A2691} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{148DD712-3B14-48B1-A7BF-81E8A056F8D2} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
+		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265} = {53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}
+		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F} = {53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}
 	EndGlobalSection
 EndGlobal
