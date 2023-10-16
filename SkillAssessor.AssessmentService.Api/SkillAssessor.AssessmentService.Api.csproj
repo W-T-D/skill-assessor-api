@@ -10,13 +10,16 @@
   <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
   <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.200.17" />
   <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />
+  <PackageReference Include="Confluent.Kafka.DependencyInjection" Version="3.1.0" />
   <PackageReference Include="HotChocolate.AspNetCore" Version="13.5.0-preview.18" />
   <PackageReference Include="MediatR" Version="12.1.1" />
+  <PackageReference Include="Serilog" Version="3.1.0-dev-02078" />
 </ItemGroup>
 
 <ItemGroup>
   <ProjectReference Include="..\SkillAssessor.AssessmentService.Data\SkillAssessor.AssessmentService.Data.csproj" />
   <ProjectReference Include="..\SkillAssessor.AssessmentService.Domain\SkillAssessor.AssessmentService.Domain.csproj" />
   <ProjectReference Include="..\SkillAssessor.AssessmentService.Entity\SkillAssessor.AssessmentService.Entity.csproj" />
+  <ProjectReference Include="..\SkillAssessor.Common.Logging\SkillAssessor.Common.Logging.csproj" />
 </ItemGroup>
 </Project>

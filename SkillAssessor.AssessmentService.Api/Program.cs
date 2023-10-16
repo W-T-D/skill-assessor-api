@@ -7,6 +7,8 @@ builder.Services.AddGraphQl();
 builder.Services.AddDataLayerServices();
 builder.Services.AddMapper();
 builder.Services.AddMediatr();
+builder.Services.AddKafka();
+builder.Services.AddSerilog();
 
 var app = builder.Build();
 
