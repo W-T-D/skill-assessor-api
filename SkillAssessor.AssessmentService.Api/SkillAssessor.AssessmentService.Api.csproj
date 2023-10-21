@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 </PropertyGroup>
 
 <ItemGroup>
@@ -21,5 +22,11 @@
   <ProjectReference Include="..\SkillAssessor.AssessmentService.Domain\SkillAssessor.AssessmentService.Domain.csproj" />
   <ProjectReference Include="..\SkillAssessor.AssessmentService.Entity\SkillAssessor.AssessmentService.Entity.csproj" />
   <ProjectReference Include="..\SkillAssessor.Common.Logging\SkillAssessor.Common.Logging.csproj" />
+</ItemGroup>
+
+<ItemGroup>
+  <Content Include="..\.dockerignore">
+    <Link>.dockerignore</Link>
+  </Content>
 </ItemGroup>
 </Project>
