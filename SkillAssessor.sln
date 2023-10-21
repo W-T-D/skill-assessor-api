@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.Common.Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.Common.Models", "SkillAssessor.Common.Models\SkillAssessor.Common.Models.csproj", "{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillAssessor.Common.Logging", "SkillAssessor.Common.Logging\SkillAssessor.Common.Logging.csproj", "{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B414D16C-A41A-40E6-8716-825C9DAD2FD0} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
@@ -68,5 +74,6 @@ Global
 		{148DD712-3B14-48B1-A7BF-81E8A056F8D2} = {00C4839D-AB0A-4234-ACCD-720AE33699BF}
 		{2AE3DEB8-6F91-4BD3-A9E9-362CE4F13265} = {53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}
 		{4DCDAC11-4DCE-4F0F-B161-01EAEFEEA67F} = {53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}
+		{EB3610D5-ACC6-4D8A-8A51-3BAB909AA674} = {53E1C256-A4BD-4AC8-A059-E40EC0EFFD11}
 	EndGlobalSection
 EndGlobal
