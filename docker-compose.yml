@@ -1,6 +1,16 @@
 version: '3.9'
 
 services:
+  employee-service-db:
+    image: postgres
+    container_name: employee-service-db
+    environment:
+      POSTGRES_DB: "employee-service-db"
+      POSTGRES_USER: "employee-service"
+      POSTGRES_PASSWORD: "employee-service-2023"
+  ports:
+    - "5432:5432"
+
   assessment-service-api:
     build: ./SkillAssessor.AssessmentService.Api/
     restart: always

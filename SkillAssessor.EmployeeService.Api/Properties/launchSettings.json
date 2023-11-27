@@ -15,7 +15,7 @@
       "applicationUrl": "http://localhost:5098",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "DB_CONNECTION_STRING": ""
+        "DB_CONNECTION_STRING": "Host=employee-service-db.c9nebq3l8wrc.eu-north-1.rds.amazonaws.com;Port=5432;Database=employee-service-db;User Id=postgres;Password=using_DanielXOO2003;"
       }
     },
     "https": {

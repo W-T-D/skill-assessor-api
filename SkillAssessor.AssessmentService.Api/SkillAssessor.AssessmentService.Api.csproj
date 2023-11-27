@@ -12,7 +12,7 @@
   <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.200.17" />
   <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />
   <PackageReference Include="Confluent.Kafka.DependencyInjection" Version="3.1.0" />
-  <PackageReference Include="HotChocolate.AspNetCore" Version="13.5.0-preview.18" />
+  <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.5" />
   <PackageReference Include="MediatR" Version="12.1.1" />
   <PackageReference Include="Serilog" Version="3.1.0-dev-02078" />
 </ItemGroup>

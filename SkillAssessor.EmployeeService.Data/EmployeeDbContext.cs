@@ -21,22 +21,28 @@ public sealed class EmployeeDbContext : DbContext
     {
         modelBuilder.Entity<Employee>(b =>
         {
-            b.Property(e => e.DateOfBirth).IsRequired();
-            b.Property(e => e.Country).IsRequired();
-            b.Property(e => e.EmploymentDate).IsRequired();
+            b.Property(e => e.DateOfBirth)
+                .IsRequired();
+            b.Property(e => e.Country)
+                .IsRequired();
+            b.Property(e => e.EmploymentDate)
+                .IsRequired();
             b.HasMany(e => e.Skills);
             b.HasMany(e => e.InterviewRequests);
         });
 
         modelBuilder.Entity<SkillLevel>(b =>
         {
-            b.Property(sl => sl.LevelNumber).IsRequired();
-            b.Property(sl => sl.SkillTitle).IsRequired();
+            b.Property(sl => sl.LevelNumber)
+                .IsRequired();
+            b.Property(sl => sl.SkillTitle)
+                .IsRequired();
         });
 
         modelBuilder.Entity<InterviewRequest>(b =>
         {
-            b.Property(ir => ir.InterviewDate).IsRequired();
+            b.Property(ir => ir.InterviewDate)
+                .IsRequired();
             b.HasOne(ir => ir.Employee);
             b.HasOne(ir => ir.SkillLevel);
             b.HasMany(ir => ir.Interviewers);
