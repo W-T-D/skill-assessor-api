@@ -5,5 +5,5 @@ namespace SkillAssessor.EmployeeService.Data.Repositories.Interfaces;
 
 public interface IInterviewRequestRepository : IRepository<InterviewRequest>
 {
-    Task<InterviewRequest> GetByIdAsync(Guid id);
+    Task<InterviewRequest> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 }

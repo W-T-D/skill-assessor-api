@@ -1,11 +1,11 @@
-﻿using Serilog;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Serilog;
 using Serilog.Core;
-using SkillAssessor.Common.Logging;
 using SkillAssessor.Common.Logging.Enrichers;
 using SkillAssessor.Common.Logging.Producer;
 using ILogger = Serilog.ILogger;
 
-namespace SkillAssessor.AssessmentService.Api.Extensions;
+namespace SkillAssessor.Common.Logging;
 
 public static class SerilogExtension
 {

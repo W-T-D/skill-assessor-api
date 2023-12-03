@@ -1,6 +1,4 @@
-﻿using SkillAssessor.EmployeeService.Entity.Employees;
-
-namespace SkillAssessor.EmployeeService.Entity.SkillLevels;
+﻿namespace SkillAssessor.EmployeeService.Entity.SkillLevels;
 
 public sealed class SkillLevel
 {

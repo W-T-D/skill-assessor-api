@@ -11,11 +11,11 @@ public class EmployeeRepository : Repository<Employee>, IEmployeeRepository
     public EmployeeRepository(EmployeeDbContext dbContext) : base(dbContext) { }
 
     
-    public async Task<Employee> GetByIdAsync(Guid id)
+    public async Task<Employee> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         var employee = await Data
             .AsNoTracking()
-            .FirstOrDefaultAsync(e => e.Id == id);
+            .FirstOrDefaultAsync(e => e.Id == id, cancellationToken);
 
         if (employee is null)
         {

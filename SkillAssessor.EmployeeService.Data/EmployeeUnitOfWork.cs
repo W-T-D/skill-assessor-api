@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SkillAssessor.Common.EfCore.UnitOfWork;
+﻿using SkillAssessor.Common.EfCore.UnitOfWork;
 using SkillAssessor.EmployeeService.Data.Interfaces;
 using SkillAssessor.EmployeeService.Data.Repositories;
 using SkillAssessor.EmployeeService.Data.Repositories.Interfaces;

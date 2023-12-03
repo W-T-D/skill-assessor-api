@@ -11,11 +11,11 @@ public class SkillLevelRepository : Repository<SkillLevel>, ISkillLevelRepositor
     public SkillLevelRepository(EmployeeDbContext dbContext) : base(dbContext) { }
 
     
-    public async Task<SkillLevel> GetByIdAsync(Guid id)
+    public async Task<SkillLevel> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         var skillLevel = await Data
             .AsNoTracking()
-            .FirstOrDefaultAsync(sl => sl.Id == id);
+            .FirstOrDefaultAsync(sl => sl.Id == id, cancellationToken);
 
         if (skillLevel is null)
         {

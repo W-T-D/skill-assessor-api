@@ -10,6 +10,8 @@
 
     <ItemGroup>
       <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.5" />
+      <PackageReference Include="HotChocolate.Data" Version="14.0.0-p.15" />
+      <PackageReference Include="MediatR" Version="12.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,6 +23,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SkillAssessor.EmployeeService.Data\SkillAssessor.EmployeeService.Data.csproj" />
+      <ProjectReference Include="..\SkillAssessor.EmployeeService.DomainModels\SkillAssessor.EmployeeService.DomainModels.csproj" />
+      <ProjectReference Include="..\SkillAssessor.EmployeeService.Domain\SkillAssessor.EmployeeService.Domain.csproj" />
     </ItemGroup>
+
+
+
 
 </Project>

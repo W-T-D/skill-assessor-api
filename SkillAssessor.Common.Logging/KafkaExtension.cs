@@ -1,6 +1,7 @@
 ﻿using Confluent.Kafka;
+using Microsoft.Extensions.DependencyInjection;
 
-namespace SkillAssessor.AssessmentService.Api.Extensions;
+namespace SkillAssessor.Common.Logging;
 
 public static class KafkaExtension
 {

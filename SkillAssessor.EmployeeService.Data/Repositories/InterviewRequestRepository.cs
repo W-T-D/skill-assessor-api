@@ -11,11 +11,11 @@ public class InterviewRequestRepository : Repository<InterviewRequest>, IIntervi
     public InterviewRequestRepository(EmployeeDbContext dbContext) : base(dbContext) { }
 
     
-    public async Task<InterviewRequest> GetByIdAsync(Guid id)
+    public async Task<InterviewRequest> GetByIdAsync(Guid id, CancellationToken cancellationToken)
     {
         var interviewRequest = await Data
             .AsNoTracking()
-            .FirstOrDefaultAsync(ir => ir.Id == id);
+            .FirstOrDefaultAsync(ir => ir.Id == id, cancellationToken: cancellationToken);
 
         if (interviewRequest is null)
         {

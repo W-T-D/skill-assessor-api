@@ -5,5 +5,5 @@ namespace SkillAssessor.EmployeeService.Data.Repositories.Interfaces;
 
 public interface ISkillLevelRepository : IRepository<SkillLevel>
 {
-    Task<SkillLevel> GetByIdAsync(Guid id);
+    Task<SkillLevel> GetByIdAsync(Guid id, CancellationToken cancellationToken = default);
 }

@@ -2,9 +2,11 @@
 
 public interface IRepository<T>
 {
-    Task CreateAsync(T data);
+    IQueryable<T> GetAll();
+    
+    Task CreateAsync(T data, CancellationToken cancellationToken = default);
 
-    Task UpdateAsync(T data);
+    Task UpdateAsync(T data, CancellationToken cancellationToken = default);
 
-    Task DeleteAsync(T data);
+    Task DeleteAsync(T data, CancellationToken cancellationToken = default);
 }
