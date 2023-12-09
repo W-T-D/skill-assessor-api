@@ -7,6 +7,7 @@ var configuration = builder.Configuration;
 builder.Services.AddDataLayerServices(configuration);
 builder.Services.AddGraphQl();
 builder.Services.AddMediatr();
+builder.Services.AddMapper();
 
 var app = builder.Build();
 

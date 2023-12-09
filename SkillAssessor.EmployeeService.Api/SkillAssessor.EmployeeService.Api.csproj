@@ -9,6 +9,7 @@
 
 
     <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
       <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.5" />
       <PackageReference Include="HotChocolate.Data" Version="14.0.0-p.15" />
       <PackageReference Include="MediatR" Version="12.2.0" />
