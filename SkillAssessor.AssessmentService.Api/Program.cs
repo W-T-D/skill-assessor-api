@@ -1,4 +1,5 @@
 using SkillAssessor.AssessmentService.Api.Extensions;
+using SkillAssessor.Common.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +13,6 @@ builder.Services.AddKafka();
 builder.Services.AddSerilog();
 
 var app = builder.Build();
-
-app.UseCorrelationIds();
 
 app.MapGraphQL();
 
