@@ -17,6 +17,12 @@ services:
     depends_on: 
       - "assessment-service-broker"
   
+  employee-service-api:
+    build: ./SkillAssessor.EmployeeService.Api/
+    restart: always
+    depends_on: 
+      - "employee-service-db"
+
   zookeeper:
       image: confluentinc/cp-zookeeper
       container_name: zookeeper
